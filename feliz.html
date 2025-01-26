@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário!</title>
+    <link rel="stylesheet" href="feliz.css">
+</head>
+<body>
+    <div class="container">
+        
+        <p>
+            <h1>🎂 Ti amo Doidinha! 🎉</h1>
+            Hoje é o teu dia e, mesmo que 
+            o tempo tenha seguido caminhos diferentes para 
+            nós, não posso deixar de refletir sobre os momentos
+             que compartilhamos. O teu sorriso, as nossas conversas, as 
+             alegrias e até os desafios... Tudo isso ainda faz parte de quem
+              eu sou. A vida tem a incrível capacidade de nos ensinar, 
+            e de nos guiar a lugares que, muitas 
+            vezes, não conseguimos ver antes. O que aconteceu 
+            entre nós foi significativo, e sei que ambos carregamos 
+            lições valiosas disso.
+
+          O que mais desejo para ti, neste teu novo
+            ciclo, é que a felicidade te acompanhe, que
+            a paz e o amor que procuramos sigam ao teu lado.
+            Que, ao olhar para trás, consigas ver a beleza nas 
+            escolhas que fizeste. Às vezes, a vida toma decisões por
+                nós, mas cabe a nós entender e crescer com elas. Espero 
+                que, no fundo, encontres a tua paz e felicidade onde quer 
+                que estejas. Feliz aniversário.
+             🎁</p>
+
+        <!-- Botão oculto para ativar o áudio -->
+        <button id="playMusic">Clique aqui para começar a surpresa! 🎶</button>
+
+        <!-- Música de fundo -->
+        <audio id="musicaFeliz" loop>
+            <source src="Maroon 5 - Girls Like You ft. Cardi B (Volume 2) (Official Music Video).mp3" type="audio/mp3">
+            Seu navegador não suporta a tag de áudio.
+        </audio>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const music = document.getElementById("musicaFeliz");
+            const playButton = document.getElementById("playMusic");
+
+            // Inicia a música ao clicar no botão
+            playButton.addEventListener("click", function () {
+                music.play();
+                playButton.style.display = "none"; // Esconde o botão após a música começar
+            });
+        });
+    </script>
+</body>
+</html>
